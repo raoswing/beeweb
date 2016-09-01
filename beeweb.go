@@ -33,7 +33,6 @@ const (
 // because we use `bee bale` to pack static resources
 // and we cannot make sure that which init() execute first.
 func initialize() {
-	//raozhangwen add comment
 	models.InitModels()
 
 	routers.IsPro = beego.BConfig.RunMode == "prod"
